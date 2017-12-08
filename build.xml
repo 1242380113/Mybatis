@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project  basedir="." default="javadocs" name="Java Doc">
+<property environment="env" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="target.dir" value="${basedir}/target" />
+	<property name="src.lib" location="${basedir}" />
+	<path id="classpath">
+		<fileset dir="${src.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+<target name="javadocs" description="Generate JavaDoc API docs">
+	 <war destfile="fax.war" webxml="C:/Users/Guanhaohao/Documents/mybatis/WebContent/WEB-INF/web.xml">
+      <fileset dir="C:/Users/Guanhaohao/Documents/mybatis/WebContent">
+         <include name="**/*.*"/>
+      </fileset>
+
+     
+
+      <classes dir="C:\Users\Guanhaohao\Documents\mybatis\build\classes"/>
+   </war>
+   
+  
+   </target>
+</project>
